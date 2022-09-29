@@ -3,7 +3,7 @@ import { ComponentA } from "./Components/ComponentA.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="w-10/12">
       <ComponentA />
     </div>
   );
