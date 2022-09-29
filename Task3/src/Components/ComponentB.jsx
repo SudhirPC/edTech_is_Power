@@ -9,13 +9,31 @@ export const ComponentB = () => {
     dispatch(addSkills(inputSkill));
   };
   return (
-    <div>
-      <input
+    <div className="w-10/12 m-auto componentB">
+      <i><h1 className=" heading text-2xl text-red-600">Skills List App</h1></i>
+      {/* <input
         type="text"
-        placeholder="Enter Your Thoughts"
+        placeholder="Enter Your Skills"
         onChange={(e) => setInputSkill(e.target.value)}
-      />
-      <button onClick={handleAddSkill}>Add Skills</button>
+      /> */}
+      {/* <button
+        onClick={handleAddSkill}
+        className="bg-blue-500 hover:bg-blue-400 text-white font-bold border-b-4 border-blue-700 hover:border-blue-500 rounded w-48"
+      >
+        Add Skills
+      </button> */}
+ 
+        <div className=" flex justify-center">
+    <div className="relative ">
+        <input type="text" id="simple-search"  onChange={(e) => setInputSkill(e.target.value)} placeholder="Enter Your Skills" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-8/10 pl-56 pr-24 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-xl" required="" />
+    </div>
+    <button type="submit" onClick={handleAddSkill} className="p-2.5 ml-2 w-32 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+       Add Skills
+    </button>
+        </div>
+
+
+
     </div>
   );
 };

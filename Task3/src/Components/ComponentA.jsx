@@ -4,7 +4,7 @@ import { ComponentC } from "./ComponentC.jsx";
 
 export const ComponentA = () => {
   return (
-    <div>
+    <div className="componentA">    
       <ComponentB />
       <ComponentC />
     </div>
