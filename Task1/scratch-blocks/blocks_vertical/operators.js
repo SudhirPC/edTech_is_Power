@@ -195,7 +195,25 @@ Blockly.Blocks['operator_equals'] = {
     });
   }
 };
-
+Blockly.Blocks['operator_Square'] = {
+  /**
+   * Block for adding two numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_SQUARE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM1"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
 Blockly.Blocks['operator_gt'] = {
   /**
    * Block for greater than comparator.

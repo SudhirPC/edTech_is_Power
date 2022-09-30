@@ -22,6 +22,7 @@ class Scratch3OperatorsBlocks {
             operator_divide: this.divide,
             operator_lt: this.lt,
             operator_equals: this.equals,
+            operator_Square:this.Square,
             operator_gt: this.gt,
             operator_and: this.and,
             operator_or: this.or,
@@ -56,7 +57,9 @@ class Scratch3OperatorsBlocks {
     lt (args) {
         return Cast.compare(args.OPERAND1, args.OPERAND2) < 0;
     }
-
+    Square(args){
+        return Cast.toNumber(args.NUM1) * Cast.toNumber(args.NUM1);
+    }
     equals (args) {
         return Cast.compare(args.OPERAND1, args.OPERAND2) === 0;
     }
