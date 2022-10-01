@@ -9,7 +9,7 @@ export const ComponentC = () => {
     <div className="w-full m-auto componentC">
       {skills.length > 0 ? <h1 className="skillsheading">My Skills</h1> : null}
       <div className="flex flexdiv justify-around">
-        <div className="w-4/10">
+        <div className="w-4/10 ">
           {skills.length > 0 ? (
             <img
               src="./developerskills.gif"
@@ -32,7 +32,7 @@ export const ComponentC = () => {
   
         </div>
         
-        <div className="ml-14 w-5/10">
+        <div className="-ml-14 w-5/10 ">
           {skills.map((e, index) => {
             return (
               <div className="enteredskill flex justify-start">
