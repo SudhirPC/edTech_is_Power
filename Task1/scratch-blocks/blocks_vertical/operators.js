@@ -408,7 +408,44 @@ Blockly.Blocks['operator_mod'] = {
     });
   }
 };
-
+Blockly.Blocks['operator_Square'] = {
+  /**
+   * Block for adding two numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_SQUARE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM1"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+Blockly.Blocks['operator_Square_Root'] = {
+  /**
+   * Block for adding two numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_SQUARE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM1"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
 Blockly.Blocks['operator_round'] = {
   /**
    * Block for rounding a numbers.
@@ -446,8 +483,7 @@ Blockly.Blocks['operator_mathop'] = {
             [Blockly.Msg.OPERATORS_MATHOP_FLOOR, 'floor'],
             [Blockly.Msg.OPERATORS_MATHOP_CEILING, 'ceiling'],
             [Blockly.Msg.OPERATORS_MATHOP_SQRT, 'sqrt'],
-            [Blockly.Msg.OPERATORS_MATHOP_SQUARE, 'square'],
-            [Blockly.Msg.OPERATORS_MATHOP_SIN, 'sin'],
+            [Blockly.Msg.OPERATORS_MATHOP_SIN, 'sin'], 
             [Blockly.Msg.OPERATORS_MATHOP_COS, 'cos'],
             [Blockly.Msg.OPERATORS_MATHOP_TAN, 'tan'],
             [Blockly.Msg.OPERATORS_MATHOP_ASIN, 'asin'],

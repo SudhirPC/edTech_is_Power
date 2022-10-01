@@ -22,7 +22,8 @@ class Scratch3OperatorsBlocks {
             operator_divide: this.divide,
             operator_lt: this.lt,
             operator_equals: this.equals,
-            operator_square:this.square,
+            operator_Square:this.square,
+            operator_Square_Root:this.square_root,
             operator_gt: this.gt,
             operator_and: this.and,
             operator_or: this.or,
@@ -53,7 +54,12 @@ class Scratch3OperatorsBlocks {
     divide (args) {
         return Cast.toNumber(args.NUM1) / Cast.toNumber(args.NUM2);
     }
-
+    square(){
+        return  Cast.toNumber(args.NUM1) * Cast.toNumber(args.NUM1);
+    }
+    square_root(){
+        return  Cast.toNumber(Math.sqrt(args.NUM1));
+    }
     lt (args) {
         return Cast.compare(args.OPERAND1, args.OPERAND2) < 0;
     }
@@ -137,7 +143,6 @@ class Scratch3OperatorsBlocks {
         case 'floor': return Math.floor(n);
         case 'ceiling': return Math.ceil(n);
         case 'sqrt': return Math.sqrt(n);
-        case 'square': return Math.round(n*n);
         case 'sin': return parseFloat(Math.sin((Math.PI * n) / 180).toFixed(10));
         case 'cos': return parseFloat(Math.cos((Math.PI * n) / 180).toFixed(10));
         case 'tan': return MathUtil.tan(n);
